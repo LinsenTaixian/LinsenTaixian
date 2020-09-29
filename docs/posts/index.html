@@ -107,7 +107,11 @@
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      搞了那么久，发现还是简简单单最好。泪目 
+      快速幂运算和矩阵快速幂运算 快速幂运算 题:既求一个数的n次方,其中n特别大, 最后的结果对k取余
+例如$ a^{22}$ 其中$ 22$的二进制表示为$ 10110$, 所以可以通过一直计算$ x$的平方, 然后在n的二进制为一的地方乘以res, 就可以得到下面的额算法
+typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ ll res = 1; while(n &gt; 0){ if(n&amp;1) res = x*x%mod_k; x = x*x%mod_k; n&gt;&gt;= 1; } return res; } 或者:
+或者也可以采用另外一种理解使用递归函数$n$ 为偶数时, 其递归是$a^n = (a^2)^{\frac{n}{2}}$ , 如果是奇数, 也可以递归成 $ a^n = {(a^2)}^{\frac{n- 1}{2}}\times a$ , 就是下面的代码所示
+typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ if(n == 0) return 1; ll res = mod_pow(x*x%mod_k, n/2, mod_k); if(n&amp;1) res = res*x%mod_k; return res; } 矩阵的快速幂运算 两个矩阵的快速运算为
     </div>
   </div>
 </div>
