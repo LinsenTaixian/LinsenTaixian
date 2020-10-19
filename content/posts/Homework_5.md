@@ -1,13 +1,8 @@
-<!--
- * @Descripttion:    
- * @version: 1.0
- * @School: SYSU--SDCS
- * @Author: linsen
- * @ID: 18301123
- * @Date: 2020-10-19 14:52:31
- * @LastEditors: linsen
- * @LastEditTime: 2020-10-19 21:11:07
--->
+---
+title: "Homework_5"
+date: 2020-10-19T21:24:38+08:00
+draft: false
+---
 # part1
 1. Give the three representations of an AND gate and say in your words what AND means.
 2. Give the three representations of an XOR gate and say in your words what XOR means.

@@ -1,3 +1,9 @@
+---
+title: "Homework_4"
+date: 2020-10-19T21:24:34+08:00
+draft: false
+---
+
 # 名词解释
 ## ASCII
 ASCII (/ˈæskiː/ (About this soundlisten) ASS-kee),[3]:6 abbreviated from American Standard Code for Information Interchange, is a character encoding standard for electronic communication. 

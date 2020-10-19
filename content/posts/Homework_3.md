@@ -1,3 +1,9 @@
+---
+title: "Homework_3"
+date: 2020-10-19T21:24:31+08:00
+draft: false
+---
+
 # part1
 Write out variables x, y and z in binary code
 1. int8_t x = 67; int8_t y = -7; int8_t z = y - x

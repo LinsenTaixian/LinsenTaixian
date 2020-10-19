@@ -1,3 +1,9 @@
+---
+title: "Homework_1"
+date: 2020-10-19T21:23:46+08:00
+draft: false
+---
+
 # 名词解释
 
 ## Computer
@@ -17,3 +23,4 @@ Alan Mathison Turing (/ˈtjʊərɪŋ/; 23 June 1912 – 7 June 1954) was an Engl
 
 ## Moore's law
 Moore's law is the observation that the number of transistors in a dense integrated circuit (IC) doubles about every two years.
+

@@ -1,3 +1,9 @@
+---
+title: "Homework_6"
+date: 2020-10-19T21:24:42+08:00
+draft: false
+---
+
 
 # Homework:
 1. According to the von Neumann architecture, List basic parts of a computer.

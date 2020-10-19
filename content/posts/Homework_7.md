@@ -1,3 +1,9 @@
+---
+title: "Homework_7"
+date: 2020-10-19T21:24:45+08:00
+draft: false
+---
+
 # Homework
 1. Program with machine language according to the following c. int_8 a = 1; int_8 c = a + 3;
     1. Write your assembly code & machine code

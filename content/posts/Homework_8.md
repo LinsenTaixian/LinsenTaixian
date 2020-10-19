@@ -1,3 +1,9 @@
+---
+title: "Homework_8"
+date: 2020-10-19T21:24:49+08:00
+draft: false
+---
+
 
 1. 阅读 Pseudocode Standard。（答案可以打印）
     1. 用伪代码描述将十进制转换成16进制的方法
