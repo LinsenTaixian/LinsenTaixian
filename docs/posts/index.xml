@@ -5,7 +5,95 @@
     <link>https://linsentaixian.github.io/LinsenTaixian/posts/</link>
     <description>Recent content in Posts on Linsen</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Sep 2020 01:29:21 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Oct 2020 21:24:49 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homework_8</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_8/</link>
+      <pubDate>Mon, 19 Oct 2020 21:24:49 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_8/</guid>
+      <description>阅读 Pseudocode Standard。（答案可以打印）
+ 用伪代码描述将十进制转换成16进制的方法 C语言实现（先用注释写好算法，然后翻译） 使用 -1, 0, 1, 15, 26，3265 最为输入测试你的程序    名词解释与对比
+ Top-down design Work breakdown structure (WBS) 简述管理学 WBS 与 信息学Top-down设计 的异同    仔细观察您洗衣机的运作过程，运用Top-down设计方法和Pseudocode 描述洗衣机控制程序。假设洗衣机可执行的基本操作如下
+ water_in_switch(open_close) // open 打开上水开关，close关闭 water_out_switch(open_close) // open 打开排水开关，close关闭 get_water_volume() //返回洗衣机内部水的高度 motor_run(direction) // 电机转动。left左转，right右转，stop停 time_counter() // 返回当前时间计数，以秒为单位 halt(returncode) //停机，success 成功 failure 失败   请使用伪代码分解“正常洗衣”程序的大步骤。包括注水、浸泡等 1.进一步用基本操作、控制语句（IF、FOR、WHILE等）、变量与表达式，写出每个步骤的伪代码 根据你的实践，请分析“正常洗衣”与“快速洗衣”在用户目标和程序上的异同. 你认为是否存在改进（创新）空间，简单说明你的改进意见？ 通过步骤3），提取一些共性功能模块（函数），简化“正常洗衣”程序，使程序变得更利于人类理解和修改维护。例如：  wait(time) //等待指定的时间; 注水(volume,timeout) //在指定时间内完成注水，否则停机； 排水(timeout)。等子程序      解:</description>
+    </item>
+    
+    <item>
+      <title>Homework_7</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_7/</link>
+      <pubDate>Mon, 19 Oct 2020 21:24:45 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_7/</guid>
+      <description>Homework  Program with machine language according to the following c. int_8 a = 1; int_8 c = a + 3;  Write your assembly code &amp;amp; machine code Explain machine code execution with the fetch-decode-execute cycle Explain functions about IR, PC, ACC registers in a CPU Explain physical meaning about vars a &amp;amp; c in a machine   简答题  What are stored in memory? Can a data or a instruction stored in the same place?</description>
+    </item>
+    
+    <item>
+      <title>Homework_6</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_6/</link>
+      <pubDate>Mon, 19 Oct 2020 21:24:42 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_6/</guid>
+      <description>Homework:  According to the von Neumann architecture, List basic parts of a computer. A computer has 64 MB (megabytes) of memory. How many bits are needed to address any single byte in memory? List basic parts of a CPU, include cache or not? What mean secondary storage. List some on your PC. 使用维基百科，解释以下概念：CPU、RAM、ROM、Bus (computing)、Parallel Computing 写一段文字，简单解释“云计算（cloud computing）” 小孙买了计算机主板，说明书表明“支持双通道DDR3-1333内存, 最大支持16G”  DDR3内存，“3”和“1333”的含义是什么？ 小孙买8G DDR3-1600的内存能提高性能吗？ 小孙买4G*2 DDR3-1333的内存能提高性能吗？ 16G需要多少位地址？    解:</description>
+    </item>
+    
+    <item>
+      <title>Homework_5</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/</link>
+      <pubDate>Mon, 19 Oct 2020 21:24:38 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/</guid>
+      <description>part1  Give the three representations of an AND gate and say in your words what AND means. Give the three representations of an XOR gate and say in your words what XOR means. Draw a circuit diagram corresponding to the following Boolean expression: (A + B)(B + C) Show the behavior of the following circuit with a truth table: What is circuit equivalence? Use truth table to prove the following formula.</description>
+    </item>
+    
+    <item>
+      <title>Homework_4</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_4/</link>
+      <pubDate>Mon, 19 Oct 2020 21:24:34 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_4/</guid>
+      <description>名词解释 ASCII ASCII (/ˈæskiː/ (About this soundlisten) ASS-kee),[3]:6 abbreviated from American Standard Code for Information Interchange, is a character encoding standard for electronic communication.
+Color Color (American English), or colour (Commonwealth English), is the characteristic of visual perception described through color categories, with names such as red, orange, yellow, green, blue, or purple. This perception of color derives from the stimulation of photoreceptor cells (in particular cone cells in the human eye and other vertebrate eyes) by electromagnetic radiation (in the visible spectrum in the case of humans).</description>
+    </item>
+    
+    <item>
+      <title>Homework_3</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_3/</link>
+      <pubDate>Mon, 19 Oct 2020 21:24:31 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_3/</guid>
+      <description>part1 Write out variables x, y and z in binary code
+  int8_t x = 67; int8_t y = -7; int8_t z = y - x
+  int8_t x = 0xd3;
+  uint8_t = 0xd3;
+  int8_t x = 127; int8_t y = -7; int8_t z = y – x;
+  float x = 1.125;
+  float x = 23.0;
+  float x = 0.</description>
+    </item>
+    
+    <item>
+      <title>Homework_2</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_2/</link>
+      <pubDate>Mon, 19 Oct 2020 21:24:28 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_2/</guid>
+      <description>进制转换  1分12秒 = （72000）毫秒 （7A）13 = （101）10 （7A）16 = （122）10 （7A）16 = （111 1010）2 = （172）8 （1011011）2 = （133）8 = （5B）16 （678）10 = （10 1010 0110）2 = （1246）8 （111）2 + （101）2 = （1100）2  名词解释 Information Information can be thought of as the resolution of uncertainty.
+Positional notation Positional notation denotes usually the extension to any base of the Hindu–Arabic numeral system (or decimal system).
+Algorithm In mathematics and computer science, an algorithm is a finite sequence of well-defined, computer-implementable instructions, typically to solve a class of problems or to perform a computation.</description>
+    </item>
+    
+    <item>
+      <title>Homework_1</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_1/</link>
+      <pubDate>Mon, 19 Oct 2020 21:23:46 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_1/</guid>
+      <description>名词解释 Computer A computer is a machine that can be instructed to carry out sequences of arithmetic or logical operations automatically via computer programming.
+Computer science Computer science is the study of algoric ithmprocesses and computational machines.
+Software Computer software, or simply software, is a collection of data or computer instructions that tell the computer how to work.
+Software engineer A software engineer is a person who applies the principles of software engineering to the design, development, maintenance, testing, and evaluation of computer software.</description>
+    </item>
+    
     <item>
       <title>快速幂运算和矩阵快速幂运算</title>
       <link>https://linsentaixian.github.io/LinsenTaixian/posts/%E5%BF%AB%E9%80%9F%E5%B9%82%E8%BF%90%E7%AE%97%E5%92%8C%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82%E8%BF%90%E7%AE%97/</link>

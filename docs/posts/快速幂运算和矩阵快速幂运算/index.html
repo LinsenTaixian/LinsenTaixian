@@ -44,7 +44,7 @@ typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ ll res = 1; while(n &gt;
 typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ if(n == 0) return 1; ll res = mod_pow(x*x%mod_k, n/2, mod_k); if(n&amp;1) res = res*x%mod_k; return res; } 矩阵的快速幂运算 两个矩阵的快速运算为">
 <meta itemprop="datePublished" content="2020-09-27T01:29:21+08:00" />
 <meta itemprop="dateModified" content="2020-09-27T01:29:21+08:00" />
-<meta itemprop="wordCount" content="661">
+<meta itemprop="wordCount" content="619">
 
 
 
@@ -219,14 +219,9 @@ ll <span style="color:#a6e22e">mod_pow</span>(ll x, ll n, ll mod_k){
 <p><em>不知所措的出题人决定先去店里赎回徽章。来到店里，这里只有罗姆老爷爷，和一个小女孩。</em></p>
 <p><em>罗姆：“你拿什么来赎？”</em></p>
 <h4 id="题目描述">题目描述</h4>
-<p>出题人：“当当当当！看这个手机，它有很神奇的能力，它能算递推数列哦！”</p>
-<p>罗姆：“递推数列？这个老夫也会，老夫识得斐波那契数列，就是 f1=1, f2=1, fn=fn−1+fn−2f1=1, f2=1, fn=fn−1+fn−2，这个数列是 1,1,2,3,5,8,13⋯1,1,2,3,5,8,13⋯”</p>
-<p>出题人：“很好。常系数齐次线性递推就是一种扩展，定义 f1=a1, f2=a2,⋯,fk=akf1=a1, f2=a2,⋯,fk=ak，当 n&gt;kn&gt;k 时，有 fn=c1fn−1+c2fn−2+⋯+ckfn−kfn=c1fn−1+c2fn−2+⋯+ckfn−k。</p>
-<p>“比如，令 k=2, a1=a2=c1=c2=1k=2, a1=a2=c1=c2=1，那么它就成了斐波那契数列。</p>
-<p>“现在给你 a1,⋯,aka1,⋯,ak 这 kk 个初始项、c1,⋯,ckc1,⋯,ck 这 kk 个递推系数，以及 nn，你能求出 fnfn 吗？注意 nn 很大哟~你不会了吧~”</p>
-<p>罗姆：“这。。老夫还真不会，你这破盒子就能算对了？”</p>
-<p>你作为出题人手机这个程序的编写者，是时候向罗姆爷展现你的能力了！</p>
-<p>由于答案可能很大，你只需要输出答案对 109+7109+7 取模。易证，对于乘法运算：(a×b)modp=((amodp)×(bmodp))modp(a×b)modp=((amodp)×(bmodp))modp，对于加法运算：(a+b)modp=((amodp)+(bmodp))modp(a+b)modp=((amodp)+(bmodp))modp。即，对于你的程序中跟答案直接相关的加法和乘法运算，每次运算完之后都对 109+7109+7 取模，这样就不会溢出 long long 了。</p>
+<p><img src="https://github.com/LinsenTaixian/images/blob/master/images1/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(233).png" alt="a photo about the question"></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <p><strong>本题附有提示，但在阅读提示前请务必进行充分的独立思考，否则对你的学习能力提升没有意义。</strong></p>
 <h4 id="输入格式">输入格式</h4>
 <p>第一行两个正整数 k,nk,n。（1≤k≤201≤k≤20，k≤n≤1018k≤n≤1018）</p>
