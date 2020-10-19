@@ -1,4 +1,4 @@
-[submodule "m10c"]
+[submodule "themes/m10c"]
 	path = m10c
 	url = https://github.com/vaga/hugo-theme-m10c.git
 [submodule "themes/ananke"]
