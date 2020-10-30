@@ -5,11 +5,11 @@
     <link>https://linsentaixian.github.io/LinsenTaixian/</link>
     <description>Recent content on Linsen</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 29 Oct 2020 20:25:00 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Oct 2020 20:25:00 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>project_1</title>
       <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_1/</link>
-      <pubDate>Thu, 29 Oct 2020 20:25:00 +0800</pubDate>
+      <pubDate>Fri, 30 Oct 2020 20:25:00 +0800</pubDate>
       
       <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_1/</guid>
       <description>快速幂运算和矩阵快速幂运算 快速幂运算 题:既求一个数的n次方,其中n特别大, 最后的结果对k取余
@@ -22,7 +22,7 @@ typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ if(n == 0) return 1; ll 
     <item>
       <title>project_2</title>
       <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_2/</link>
-      <pubDate>Thu, 29 Oct 2020 20:25:00 +0800</pubDate>
+      <pubDate>Fri, 30 Oct 2020 20:25:00 +0800</pubDate>
       
       <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_2/</guid>
       <description>以Construct 3制作平台游戏的新手指南   首先你需要打开这个网站，然后注册登录。之后便可以进行游戏的制作啦
