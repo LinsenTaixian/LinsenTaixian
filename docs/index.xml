@@ -7,6 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 29 Oct 2020 20:25:00 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>project_1</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_1/</link>
+      <pubDate>Thu, 29 Oct 2020 20:25:00 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_1/</guid>
+      <description>快速幂运算和矩阵快速幂运算 快速幂运算 题:既求一个数的n次方,其中n特别大, 最后的结果对k取余
+例如$ a^{22}$ 其中$ 22$的二进制表示为$ 10110$, 所以可以通过一直计算$ x$的平方, 然后在n的二进制为一的地方乘以res, 就可以得到下面的额算法
+typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ ll res = 1; while(n &amp;gt; 0){ if(n&amp;amp;1) res = x*x%mod_k; x = x*x%mod_k; n&amp;gt;&amp;gt;= 1; } return res; } 或者:
+或者也可以采用另外一种理解使用递归函数$n$ 为偶数时, 其递归是$a^n = (a^2)^{\frac{n}{2}}$ , 如果是奇数, 也可以递归成 $ a^n = {(a^2)}^{\frac{n- 1}{2}}\times a$ , 就是下面的代码所示
+typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ if(n == 0) return 1; ll res = mod_pow(x*x%mod_k, n/2, mod_k); if(n&amp;amp;1) res = res*x%mod_k; return res; } 矩阵的快速幂运算 两个矩阵的快速运算为</description>
+    </item>
+    
+    <item>
+      <title>project_2</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_2/</link>
+      <pubDate>Thu, 29 Oct 2020 20:25:00 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_2/</guid>
+      <description>以Construct 3制作平台游戏的新手指南   首先你需要打开这个网站，然后注册登录。之后便可以进行游戏的制作啦
+  游戏制作第一步,先创建新项目.  游戏制作的第二步,你需要给你的游戏选一张背景图.   选择好背景之后就可以选择游戏的人物了   人物已经创建好了,接下来就是加一些事件了   好了,游戏已经创建好了,现在保存预览就可以了,记得保存到本地或者云中.
+  这是我的游戏链接</description>
+    </item>
+    
+    <item>
       <title>Project_3</title>
       <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_3/</link>
       <pubDate>Thu, 29 Oct 2020 20:25:00 +0800</pubDate>
@@ -119,30 +143,6 @@ Algorithm In mathematics and computer science, an algorithm is a finite sequence
 Computer science Computer science is the study of algoric ithmprocesses and computational machines.
 Software Computer software, or simply software, is a collection of data or computer instructions that tell the computer how to work.
 Software engineer A software engineer is a person who applies the principles of software engineering to the design, development, maintenance, testing, and evaluation of computer software.</description>
-    </item>
-    
-    <item>
-      <title>project_1</title>
-      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_1/</link>
-      <pubDate>Sun, 27 Sep 2020 01:29:21 +0800</pubDate>
-      
-      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_1/</guid>
-      <description>快速幂运算和矩阵快速幂运算 快速幂运算 题:既求一个数的n次方,其中n特别大, 最后的结果对k取余
-例如$ a^{22}$ 其中$ 22$的二进制表示为$ 10110$, 所以可以通过一直计算$ x$的平方, 然后在n的二进制为一的地方乘以res, 就可以得到下面的额算法
-typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ ll res = 1; while(n &amp;gt; 0){ if(n&amp;amp;1) res = x*x%mod_k; x = x*x%mod_k; n&amp;gt;&amp;gt;= 1; } return res; } 或者:
-或者也可以采用另外一种理解使用递归函数$n$ 为偶数时, 其递归是$a^n = (a^2)^{\frac{n}{2}}$ , 如果是奇数, 也可以递归成 $ a^n = {(a^2)}^{\frac{n- 1}{2}}\times a$ , 就是下面的代码所示
-typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ if(n == 0) return 1; ll res = mod_pow(x*x%mod_k, n/2, mod_k); if(n&amp;amp;1) res = res*x%mod_k; return res; } 矩阵的快速幂运算 两个矩阵的快速运算为</description>
-    </item>
-    
-    <item>
-      <title>project_2</title>
-      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_2/</link>
-      <pubDate>Sun, 27 Sep 2020 01:29:21 +0800</pubDate>
-      
-      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_2/</guid>
-      <description>以Construct 3制作平台游戏的新手指南   首先你需要打开这个网站，然后注册登录。之后便可以进行游戏的制作啦
-  游戏制作第一步,先创建新项目.  游戏制作的第二步,你需要给你的游戏选一张背景图.   选择好背景之后就可以选择游戏的人物了   人物已经创建好了,接下来就是加一些事件了   好了,游戏已经创建好了,现在保存预览就可以了,记得保存到本地或者云中.
-  这是我的游戏链接</description>
     </item>
     
   </channel>

@@ -128,6 +128,60 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_1/" class="color-inherit dim link">
+            project_1
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          快速幂运算和矩阵快速幂运算 快速幂运算 题:既求一个数的n次方,其中n特别大, 最后的结果对k取余
+例如$ a^{22}$ 其中$ 22$的二进制表示为$ 10110$, 所以可以通过一直计算$ x$的平方, 然后在n的二进制为一的地方乘以res, 就可以得到下面的额算法
+typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ ll res = 1; while(n &gt; 0){ if(n&amp;1) res = x*x%mod_k; x = x*x%mod_k; n&gt;&gt;= 1; } return res; } 或者:
+或者也可以采用另外一种理解使用递归函数$n$ 为偶数时, 其递归是$a^n = (a^2)^{\frac{n}{2}}$ , 如果是奇数, 也可以递归成 $ a^n = {(a^2)}^{\frac{n- 1}{2}}\times a$ , 就是下面的代码所示
+typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ if(n == 0) return 1; ll res = mod_pow(x*x%mod_k, n/2, mod_k); if(n&amp;1) res = res*x%mod_k; return res; } 矩阵的快速幂运算 两个矩阵的快速运算为
+        </div>
+          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_1/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_2/" class="color-inherit dim link">
+            project_2
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          以Construct 3制作平台游戏的新手指南   首先你需要打开这个网站，然后注册登录。之后便可以进行游戏的制作啦
+  游戏制作第一步,先创建新项目.  游戏制作的第二步,你需要给你的游戏选一张背景图.   选择好背景之后就可以选择游戏的人物了   人物已经创建好了,接下来就是加一些事件了   好了,游戏已经创建好了,现在保存预览就可以了,记得保存到本地或者云中.
+  这是我的游戏链接
+        </div>
+          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_2/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_3/" class="color-inherit dim link">
             Project_3
             </a>
@@ -147,69 +201,24 @@
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_4/" class="color-inherit dim link">
-            Project_4
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          任务 1：简单程序   打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number
-  点step after step。观察并回答下面问题：
- PC，IR 寄存器的作用。 ACC 寄存器的全称与作用。 用“LOD #3”指令的执行过程，解释Fetch-Execute周期。 用“ADD W” 指令的执行过程，解释Fetch-Execute周期。 “LOD #3” 与 “ADD W” 指令的执行在Fetch-Execute周期级别，有什么不同。    点击“Binary”,观察回答下面问题
- 写出指令 “LOD #7” 的二进制形式，按指令结构，解释每部分的含义。 解释 RAM 的地址。 该机器CPU是几位的？（按累加器的位数） 写出该程序对应的 C语言表达。    解：  略 如下   PC寄存器是保存指令的地址，IR寄存器是保存根据PC地址取到的指令
-  全称:Accumulator(累加器)
-作用:用于数据的算术运算和逻辑运算，可以存放数据或中间结果。
-   PC 根据地址从RAM取出指令LOD #3 指令传入IR，指令传入Decoder，无需取址，之后数字3传入MUX 数字3传入ALU之后传入ACC     PC根据地址从RAM取出指令ADD W 指令传入IR之后传入Decoder ALU从ACC中取值 IR再次访问RAM中的W，从W中取值 W的值读入ALU ALU执行加法，结果传入ACC    LOD #3只需访问RAM一次,而ADD W需要两次访问RAM
-        </div>
-          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_4/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_8/" class="color-inherit dim link">
-            Homework_8
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          阅读 Pseudocode Standard。（答案可以打印）
- 用伪代码描述将十进制转换成16进制的方法 C语言实现（先用注释写好算法，然后翻译） 使用 -1, 0, 1, 15, 26，3265 最为输入测试你的程序    名词解释与对比
- Top-down design Work breakdown structure (WBS) 简述管理学 WBS 与 信息学Top-down设计 的异同    仔细观察您洗衣机的运作过程，运用Top-down设计方法和Pseudocode 描述洗衣机控制程序。假设洗衣机可执行的基本操作如下
- water_in_switch(open_close) // open 打开上水开关，close关闭 water_out_switch(open_close) // open 打开排水开关，close关闭 get_water_volume() //返回洗衣机内部水的高度 motor_run(direction) // 电机转动。left左转，right右转，stop停 time_counter() // 返回当前时间计数，以秒为单位 halt(returncode) //停机，success 成功 failure 失败   请使用伪代码分解“正常洗衣”程序的大步骤。包括注水、浸泡等 1.进一步用基本操作、控制语句（IF、FOR、WHILE等）、变量与表达式，写出每个步骤的伪代码 根据你的实践，请分析“正常洗衣”与“快速洗衣”在用户目标和程序上的异同. 你认为是否存在改进（创新）空间，简单说明你的改进意见？ 通过步骤3），提取一些共性功能模块（函数），简化“正常洗衣”程序，使程序变得更利于人类理解和修改维护。例如：  wait(time) //等待指定的时间; 注水(volume,timeout) //在指定时间内完成注水，否则停机； 排水(timeout)。等子程序      解:
-        </div>
-          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_8/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_4/" class="link black dim">
+              Project_4
+            </a>
+          </h2>
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_8/" class="link black dim">
+              Homework_8
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_7/" class="link black dim">
@@ -220,18 +229,6 @@
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_6/" class="link black dim">
               Homework_6
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/" class="link black dim">
-              Homework_5
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_4/" class="link black dim">
-              Homework_4
             </a>
           </h2>
         
