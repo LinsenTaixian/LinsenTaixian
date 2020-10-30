@@ -14,12 +14,12 @@ draft: false
 
 1. Boolean expression: X = AB
 2. Boolean expression: X = A＋B 
-![第一二题第二三问答案](../../resources/_gen/images/homework_5/一二题2_3问.png))
+![第一二题第二三问答案](https://raw.githubusercontent.com/LinsenTaixian/images/master/homework_images/homework_5/%E4%B8%80%E4%BA%8C%E9%A2%982_3%E9%97%AE.png))
 3. 
 4.  如图
-    ![三四题答案](../../resources/_gen/images/homework_5/三四题.png)
+    ![三四题答案](https://raw.githubusercontent.com/LinsenTaixian/images/master/homework_images/homework_5/%E4%B8%89%E5%9B%9B%E9%A2%98.png)
 5. 如图
-    ![第五题答案](../../resources/_gen/images/homework_5/第五题.png)
+    ![第五题答案](https://raw.githubusercontent.com/LinsenTaixian/images/master/homework_images/homework_5/%E7%AC%AC%E4%BA%94%E9%A2%98.png)
 
 # part2
 6. There are eight 1bit full adder integrated circuits. Combine them to 8bit adder circuit using the following box diagram.
@@ -30,7 +30,7 @@ draft: false
     ) = ( )2
 
 解
-6. ![第六题答案](../../resources/_gen/images/homework_5/第六题.png) 
+6. ![第六题答案](https://raw.githubusercontent.com/LinsenTaixian/images/master/homework_images/homework_5/%E7%AC%AC%E5%85%AD%E9%A2%98.png) 
 7. 
     1. (X8X7X6X5X 1111)
     1. (X8⊕0 X7⊕0 X6⊕0 X5⊕0 X4⊕1 X3⊕1 X2⊕1 X1⊕1)

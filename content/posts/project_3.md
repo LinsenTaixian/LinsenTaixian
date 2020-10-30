@@ -21,7 +21,7 @@ draft: false
     * 串联、并联三极管，结果是什么门？
 
 ## 解:
-1. ![ 与门图片 ](../../resources/_gen/images/project_3/屏幕截图(247).png)
+1. ![ 与门图片 ](https://raw.githubusercontent.com/LinsenTaixian/images/master/homework_images/project_3/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(247).png)
 1. 如表
     | InA | INB | Out |
     | -- | - | --- |
@@ -44,7 +44,7 @@ draft: false
     | 0	| 0	| 1	| ？ | ？|
 
 解:
-1. 如图: ![等价电路图](../../resources/_gen/images/project_3/屏幕截图(248).png)
+1. 如图: ![等价电路图](https://raw.githubusercontent.com/LinsenTaixian/images/master/homework_images/project_3/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(248).png)
 1. 如下表
     | A	| B	| C	| O1 | O2 |
     | - | - | - | -- | -- |
@@ -72,7 +72,7 @@ draft: false
     | 1	| 1	| 	|   |
 
 ## 解:
-1. 如图 ![S-R锁存器](../../resources/_gen/images/project_3/屏幕截图(249).png)
+1. 如图 ![S-R锁存器](https://raw.githubusercontent.com/LinsenTaixian/images/master/homework_images/project_3/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(249).png)
 1. 
     | ~Set | ~Reset | Q（X）| ~Q（Y）|
     | -- | -- | -- | -- |
@@ -89,10 +89,10 @@ draft: false
 
 ## 解:
 1. 如图: 
-    ![一位全加器图1](../../resources/_gen/images/project_3/屏幕截图(250).png)
-    ![一位全加器图2](../../resources/_gen/images/project_3/屏幕截图(251).png)
-    ![一位全加器图3](../../resources/_gen/images/project_3/屏幕截图(252).png)
+    ![一位全加器图1](https://raw.githubusercontent.com/LinsenTaixian/images/master/homework_images/project_3/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(250).png)
+    ![一位全加器图2](https://raw.githubusercontent.com/LinsenTaixian/images/master/homework_images/project_3/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(251).png)
+    ![一位全加器图3](https://raw.githubusercontent.com/LinsenTaixian/images/master/homework_images/project_3/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(252).png)
 1. 如图: 
-    ![二位全加器图1](../../resources/_gen/images/project_3/屏幕截图(253).png)
-    ![二位全加器图2](../../resources/_gen/images/project_3/屏幕截图(254).png)
-    ![二位全加器图3](../../resources/_gen/images/project_3/屏幕截图(255).png)
+    ![二位全加器图1](https://raw.githubusercontent.com/LinsenTaixian/images/master/homework_images/project_3/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(253).png)
+    ![二位全加器图2](https://raw.githubusercontent.com/LinsenTaixian/images/master/homework_images/project_3/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(254).png)
+    ![二位全加器图3](https://raw.githubusercontent.com/LinsenTaixian/images/master/homework_images/project_3/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(255).png)
