@@ -5,7 +5,34 @@
     <link>https://linsentaixian.github.io/LinsenTaixian/</link>
     <description>Recent content on Linsen</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Oct 2020 21:24:49 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Oct 2020 20:25:00 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project_3</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_3/</link>
+      <pubDate>Thu, 29 Oct 2020 20:25:00 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_3/</guid>
+      <description>任务 1：建立一个简单电路   设计与门验证电路
+  画真值表验证与门功能
+   InA INB Out     0 0 0   0 1 ？   1 0 ？   1 1 ？      选做题：
+ 如何用 XOR 门作非门。 串联、并联三极管，结果是什么门？    解:   如表    InA INB Out     0 0 0   0 1 0   1 0 0   1 1 1     如下  将 XOR 门的一个引脚接高电平,另一个作为输入, 这时就是一个非门 串联是与门，并联是或门    任务 2：验证电路等价   分别建立电路 A（B+C）和 AB+AC 在一个界面上。用 A，B，C 用三个开关控制输入，用两个 LED 表示输出。</description>
+    </item>
+    
+    <item>
+      <title>Project_4</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_4/</link>
+      <pubDate>Thu, 29 Oct 2020 18:43:16 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_4/</guid>
+      <description>任务 1：简单程序   打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number
+  点step after step。观察并回答下面问题：
+ PC，IR 寄存器的作用。 ACC 寄存器的全称与作用。 用“LOD #3”指令的执行过程，解释Fetch-Execute周期。 用“ADD W” 指令的执行过程，解释Fetch-Execute周期。 “LOD #3” 与 “ADD W” 指令的执行在Fetch-Execute周期级别，有什么不同。    点击“Binary”,观察回答下面问题
+ 写出指令 “LOD #7” 的二进制形式，按指令结构，解释每部分的含义。 解释 RAM 的地址。 该机器CPU是几位的？（按累加器的位数） 写出该程序对应的 C语言表达。    解：  略 如下   PC寄存器是保存指令的地址，IR寄存器是保存根据PC地址取到的指令
+  全称:Accumulator(累加器)
+作用:用于数据的算术运算和逻辑运算，可以存放数据或中间结果。
+   PC 根据地址从RAM取出指令LOD #3 指令传入IR，指令传入Decoder，无需取址，之后数字3传入MUX 数字3传入ALU之后传入ACC     PC根据地址从RAM取出指令ADD W 指令传入IR之后传入Decoder ALU从ACC中取值 IR再次访问RAM中的W，从W中取值 W的值读入ALU ALU执行加法，结果传入ACC    LOD #3只需访问RAM一次,而ADD W需要两次访问RAM</description>
+    </item>
+    
     <item>
       <title>Homework_8</title>
       <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_8/</link>
@@ -96,15 +123,26 @@ Software engineer A software engineer is a person who applies the principles of 
     
     <item>
       <title>快速幂运算和矩阵快速幂运算</title>
-      <link>https://linsentaixian.github.io/LinsenTaixian/posts/%E5%BF%AB%E9%80%9F%E5%B9%82%E8%BF%90%E7%AE%97%E5%92%8C%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82%E8%BF%90%E7%AE%97/</link>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_1/</link>
       <pubDate>Sun, 27 Sep 2020 01:29:21 +0800</pubDate>
       
-      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/%E5%BF%AB%E9%80%9F%E5%B9%82%E8%BF%90%E7%AE%97%E5%92%8C%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82%E8%BF%90%E7%AE%97/</guid>
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_1/</guid>
       <description>快速幂运算和矩阵快速幂运算 快速幂运算 题:既求一个数的n次方,其中n特别大, 最后的结果对k取余
 例如$ a^{22}$ 其中$ 22$的二进制表示为$ 10110$, 所以可以通过一直计算$ x$的平方, 然后在n的二进制为一的地方乘以res, 就可以得到下面的额算法
 typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ ll res = 1; while(n &amp;gt; 0){ if(n&amp;amp;1) res = x*x%mod_k; x = x*x%mod_k; n&amp;gt;&amp;gt;= 1; } return res; } 或者:
 或者也可以采用另外一种理解使用递归函数$n$ 为偶数时, 其递归是$a^n = (a^2)^{\frac{n}{2}}$ , 如果是奇数, 也可以递归成 $ a^n = {(a^2)}^{\frac{n- 1}{2}}\times a$ , 就是下面的代码所示
 typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ if(n == 0) return 1; ll res = mod_pow(x*x%mod_k, n/2, mod_k); if(n&amp;amp;1) res = res*x%mod_k; return res; } 矩阵的快速幂运算 两个矩阵的快速运算为</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_2/</guid>
+      <description>以Construct 3制作平台游戏的新手指南   首先你需要打开这个网站，然后注册登录。之后便可以进行游戏的制作啦
+  游戏制作第一步,先创建新项目.  游戏制作的第二步,你需要给你的游戏选一张背景图.   选择好背景之后就可以选择游戏的人物了   人物已经创建好了,接下来就是加一些事件了   好了,游戏已经创建好了,现在保存预览就可以了,记得保存到本地或者云中.
+  这是我的游戏链接</description>
     </item>
     
   </channel>

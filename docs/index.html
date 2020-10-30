@@ -35,7 +35,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://linsentaixian.github.io/LinsenTaixian/" />
-<meta property="og:updated_time" content="2020-10-19T21:24:49+08:00" />
+<meta property="og:updated_time" content="2020-10-29T20:25:00+08:00" />
 <meta itemprop="name" content="Linsen">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -128,6 +128,63 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_3/" class="color-inherit dim link">
+            Project_3
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          任务 1：建立一个简单电路   设计与门验证电路
+  画真值表验证与门功能
+   InA INB Out     0 0 0   0 1 ？   1 0 ？   1 1 ？      选做题：
+ 如何用 XOR 门作非门。 串联、并联三极管，结果是什么门？    解:   如表    InA INB Out     0 0 0   0 1 0   1 0 0   1 1 1     如下  将 XOR 门的一个引脚接高电平,另一个作为输入, 这时就是一个非门 串联是与门，并联是或门    任务 2：验证电路等价   分别建立电路 A（B+C）和 AB+AC 在一个界面上。用 A，B，C 用三个开关控制输入，用两个 LED 表示输出。
+        </div>
+          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_3/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_4/" class="color-inherit dim link">
+            Project_4
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          任务 1：简单程序   打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number
+  点step after step。观察并回答下面问题：
+ PC，IR 寄存器的作用。 ACC 寄存器的全称与作用。 用“LOD #3”指令的执行过程，解释Fetch-Execute周期。 用“ADD W” 指令的执行过程，解释Fetch-Execute周期。 “LOD #3” 与 “ADD W” 指令的执行在Fetch-Execute周期级别，有什么不同。    点击“Binary”,观察回答下面问题
+ 写出指令 “LOD #7” 的二进制形式，按指令结构，解释每部分的含义。 解释 RAM 的地址。 该机器CPU是几位的？（按累加器的位数） 写出该程序对应的 C语言表达。    解：  略 如下   PC寄存器是保存指令的地址，IR寄存器是保存根据PC地址取到的指令
+  全称:Accumulator(累加器)
+作用:用于数据的算术运算和逻辑运算，可以存放数据或中间结果。
+   PC 根据地址从RAM取出指令LOD #3 指令传入IR，指令传入Decoder，无需取址，之后数字3传入MUX 数字3传入ALU之后传入ACC     PC根据地址从RAM取出指令ADD W 指令传入IR之后传入Decoder ALU从ACC中取值 IR再次访问RAM中的W，从W中取值 W的值读入ALU ALU执行加法，结果传入ACC    LOD #3只需访问RAM一次,而ADD W需要两次访问RAM
+        </div>
+          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_4/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_8/" class="color-inherit dim link">
             Homework_8
             </a>
@@ -147,60 +204,24 @@
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_7/" class="color-inherit dim link">
-            Homework_7
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Homework  Program with machine language according to the following c. int_8 a = 1; int_8 c = a + 3;  Write your assembly code &amp; machine code Explain machine code execution with the fetch-decode-execute cycle Explain functions about IR, PC, ACC registers in a CPU Explain physical meaning about vars a &amp; c in a machine   简答题  What are stored in memory? Can a data or a instruction stored in the same place?
-        </div>
-          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_7/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_6/" class="color-inherit dim link">
-            Homework_6
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Homework:  According to the von Neumann architecture, List basic parts of a computer. A computer has 64 MB (megabytes) of memory. How many bits are needed to address any single byte in memory? List basic parts of a CPU, include cache or not? What mean secondary storage. List some on your PC. 使用维基百科，解释以下概念：CPU、RAM、ROM、Bus (computing)、Parallel Computing 写一段文字，简单解释“云计算（cloud computing）” 小孙买了计算机主板，说明书表明“支持双通道DDR3-1333内存, 最大支持16G”  DDR3内存，“3”和“1333”的含义是什么？ 小孙买8G DDR3-1600的内存能提高性能吗？ 小孙买4G*2 DDR3-1333的内存能提高性能吗？ 16G需要多少位地址？    解:
-        </div>
-          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_6/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_7/" class="link black dim">
+              Homework_7
+            </a>
+          </h2>
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_6/" class="link black dim">
+              Homework_6
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/" class="link black dim">
@@ -211,18 +232,6 @@
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_4/" class="link black dim">
               Homework_4
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_3/" class="link black dim">
-              Homework_3
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_2/" class="link black dim">
-              Homework_2
             </a>
           </h2>
         

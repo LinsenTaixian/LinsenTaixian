@@ -35,7 +35,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://linsentaixian.github.io/LinsenTaixian/posts/" />
-<meta property="og:updated_time" content="2020-10-19T21:24:49+08:00" />
+<meta property="og:updated_time" content="2020-10-29T20:25:00+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -97,6 +97,45 @@
   <article class="pa3 pa4-ns nested-copy-line-height nested-img">
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
     <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_3/" class="link black dim">
+        Project_3
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      任务 1：建立一个简单电路   设计与门验证电路
+  画真值表验证与门功能
+   InA INB Out     0 0 0   0 1 ？   1 0 ？   1 1 ？      选做题：
+ 如何用 XOR 门作非门。 串联、并联三极管，结果是什么门？    解:   如表    InA INB Out     0 0 0   0 1 0   1 0 0   1 1 1     如下  将 XOR 门的一个引脚接高电平,另一个作为输入, 这时就是一个非门 串联是与门，并联是或门    任务 2：验证电路等价   分别建立电路 A（B+C）和 AB+AC 在一个界面上。用 A，B，C 用三个开关控制输入，用两个 LED 表示输出。
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_4/" class="link black dim">
+        Project_4
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      任务 1：简单程序   打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number
+  点step after step。观察并回答下面问题：
+ PC，IR 寄存器的作用。 ACC 寄存器的全称与作用。 用“LOD #3”指令的执行过程，解释Fetch-Execute周期。 用“ADD W” 指令的执行过程，解释Fetch-Execute周期。 “LOD #3” 与 “ADD W” 指令的执行在Fetch-Execute周期级别，有什么不同。    点击“Binary”,观察回答下面问题
+ 写出指令 “LOD #7” 的二进制形式，按指令结构，解释每部分的含义。 解释 RAM 的地址。 该机器CPU是几位的？（按累加器的位数） 写出该程序对应的 C语言表达。    解：  略 如下   PC寄存器是保存指令的地址，IR寄存器是保存根据PC地址取到的指令
+  全称:Accumulator(累加器)
+作用:用于数据的算术运算和逻辑运算，可以存放数据或中间结果。
+   PC 根据地址从RAM取出指令LOD #3 指令传入IR，指令传入Decoder，无需取址，之后数字3传入MUX 数字3传入ALU之后传入ACC     PC根据地址从RAM取出指令ADD W 指令传入IR之后传入Decoder ALU从ACC中取值 IR再次访问RAM中的W，从W中取值 W的值读入ALU ALU执行加法，结果传入ACC    LOD #3只需访问RAM一次,而ADD W需要两次访问RAM
+    </div>
+  </div>
+</div>
+</div>
       
         <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">
@@ -234,26 +273,27 @@ Software engineer A software engineer is a person who applies the principles of 
 </div>
 </div>
       
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://linsentaixian.github.io/LinsenTaixian/posts/%E5%BF%AB%E9%80%9F%E5%B9%82%E8%BF%90%E7%AE%97%E5%92%8C%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82%E8%BF%90%E7%AE%97/" class="link black dim">
-        快速幂运算和矩阵快速幂运算
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      快速幂运算和矩阵快速幂运算 快速幂运算 题:既求一个数的n次方,其中n特别大, 最后的结果对k取余
-例如$ a^{22}$ 其中$ 22$的二进制表示为$ 10110$, 所以可以通过一直计算$ x$的平方, 然后在n的二进制为一的地方乘以res, 就可以得到下面的额算法
-typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ ll res = 1; while(n &gt; 0){ if(n&amp;1) res = x*x%mod_k; x = x*x%mod_k; n&gt;&gt;= 1; } return res; } 或者:
-或者也可以采用另外一种理解使用递归函数$n$ 为偶数时, 其递归是$a^n = (a^2)^{\frac{n}{2}}$ , 如果是奇数, 也可以递归成 $ a^n = {(a^2)}^{\frac{n- 1}{2}}\times a$ , 就是下面的代码所示
-typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ if(n == 0) return 1; ll res = mod_pow(x*x%mod_k, n/2, mod_k); if(n&amp;1) res = res*x%mod_k; return res; } 矩阵的快速幂运算 两个矩阵的快速运算为
-    </div>
-  </div>
-</div>
-</div>
-      
     </section>
+<ul class="pagination">
+  <li class="page-item">
+    <a href="/LinsenTaixian/posts/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+  </li>
+  <li class="page-item disabled">
+    <a  class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+  </li>
+  <li class="page-item active">
+    <a class="page-link" href="/LinsenTaixian/posts/">1</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="/LinsenTaixian/posts/page/2/">2</a>
+  </li>
+  <li class="page-item">
+    <a href="/LinsenTaixian/posts/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+  </li>
+  <li class="page-item">
+    <a href="/LinsenTaixian/posts/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+  </li>
+</ul>
 
 </article>
 

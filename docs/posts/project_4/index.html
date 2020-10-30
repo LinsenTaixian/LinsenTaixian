@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Project_4 | Linsen</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.75.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/LinsenTaixian/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Project_4" />
+<meta property="og:description" content="任务 1：简单程序   打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number
+  点step after step。观察并回答下面问题：
+ PC，IR 寄存器的作用。 ACC 寄存器的全称与作用。 用“LOD #3”指令的执行过程，解释Fetch-Execute周期。 用“ADD W” 指令的执行过程，解释Fetch-Execute周期。 “LOD #3” 与 “ADD W” 指令的执行在Fetch-Execute周期级别，有什么不同。    点击“Binary”,观察回答下面问题
+ 写出指令 “LOD #7” 的二进制形式，按指令结构，解释每部分的含义。 解释 RAM 的地址。 该机器CPU是几位的？（按累加器的位数） 写出该程序对应的 C语言表达。    解：  略 如下   PC寄存器是保存指令的地址，IR寄存器是保存根据PC地址取到的指令
+  全称:Accumulator(累加器)
+作用:用于数据的算术运算和逻辑运算，可以存放数据或中间结果。
+   PC 根据地址从RAM取出指令LOD #3 指令传入IR，指令传入Decoder，无需取址，之后数字3传入MUX 数字3传入ALU之后传入ACC     PC根据地址从RAM取出指令ADD W 指令传入IR之后传入Decoder ALU从ACC中取值 IR再次访问RAM中的W，从W中取值 W的值读入ALU ALU执行加法，结果传入ACC    LOD #3只需访问RAM一次,而ADD W需要两次访问RAM" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://linsentaixian.github.io/LinsenTaixian/posts/project_4/" />
+<meta property="article:published_time" content="2020-10-29T18:43:16+08:00" />
+<meta property="article:modified_time" content="2020-10-29T18:43:16+08:00" />
+<meta itemprop="name" content="Project_4">
+<meta itemprop="description" content="任务 1：简单程序   打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number
+  点step after step。观察并回答下面问题：
+ PC，IR 寄存器的作用。 ACC 寄存器的全称与作用。 用“LOD #3”指令的执行过程，解释Fetch-Execute周期。 用“ADD W” 指令的执行过程，解释Fetch-Execute周期。 “LOD #3” 与 “ADD W” 指令的执行在Fetch-Execute周期级别，有什么不同。    点击“Binary”,观察回答下面问题
+ 写出指令 “LOD #7” 的二进制形式，按指令结构，解释每部分的含义。 解释 RAM 的地址。 该机器CPU是几位的？（按累加器的位数） 写出该程序对应的 C语言表达。    解：  略 如下   PC寄存器是保存指令的地址，IR寄存器是保存根据PC地址取到的指令
+  全称:Accumulator(累加器)
+作用:用于数据的算术运算和逻辑运算，可以存放数据或中间结果。
+   PC 根据地址从RAM取出指令LOD #3 指令传入IR，指令传入Decoder，无需取址，之后数字3传入MUX 数字3传入ALU之后传入ACC     PC根据地址从RAM取出指令ADD W 指令传入IR之后传入Decoder ALU从ACC中取值 IR再次访问RAM中的W，从W中取值 W的值读入ALU ALU执行加法，结果传入ACC    LOD #3只需访问RAM一次,而ADD W需要两次访问RAM">
+<meta itemprop="datePublished" content="2020-10-29T18:43:16+08:00" />
+<meta itemprop="dateModified" content="2020-10-29T18:43:16+08:00" />
+<meta itemprop="wordCount" content="189">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Project_4"/>
+<meta name="twitter:description" content="任务 1：简单程序   打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number
+  点step after step。观察并回答下面问题：
+ PC，IR 寄存器的作用。 ACC 寄存器的全称与作用。 用“LOD #3”指令的执行过程，解释Fetch-Execute周期。 用“ADD W” 指令的执行过程，解释Fetch-Execute周期。 “LOD #3” 与 “ADD W” 指令的执行在Fetch-Execute周期级别，有什么不同。    点击“Binary”,观察回答下面问题
+ 写出指令 “LOD #7” 的二进制形式，按指令结构，解释每部分的含义。 解释 RAM 的地址。 该机器CPU是几位的？（按累加器的位数） 写出该程序对应的 C语言表达。    解：  略 如下   PC寄存器是保存指令的地址，IR寄存器是保存根据PC地址取到的指令
+  全称:Accumulator(累加器)
+作用:用于数据的算术运算和逻辑运算，可以存放数据或中间结果。
+   PC 根据地址从RAM取出指令LOD #3 指令传入IR，指令传入Decoder，无需取址，之后数字3传入MUX 数字3传入ALU之后传入ACC     PC根据地址从RAM取出指令ADD W 指令传入IR之后传入Decoder ALU从ACC中取值 IR再次访问RAM中的W，从W中取值 W的值读入ALU ALU执行加法，结果传入ACC    LOD #3只需访问RAM一次,而ADD W需要两次访问RAM"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/LinsenTaixian/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Linsen
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://linsentaixian.github.io/LinsenTaixian/posts/project_4/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://linsentaixian.github.io/LinsenTaixian/posts/project_4/&amp;text=Project_4" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://linsentaixian.github.io/LinsenTaixian/posts/project_4/&amp;title=Project_4" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Project_4</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-10-29T18:43:16+08:00">October 29, 2020</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="任务-1简单程序">任务 1：简单程序</h2>
+<ol>
+<li>
+<p>打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number</p>
+</li>
+<li>
+<p>点step after step。观察并回答下面问题：</p>
+<ol>
+<li>PC，IR 寄存器的作用。</li>
+<li>ACC 寄存器的全称与作用。</li>
+<li>用“LOD #3”指令的执行过程，解释Fetch-Execute周期。</li>
+<li>用“ADD W” 指令的执行过程，解释Fetch-Execute周期。</li>
+<li>“LOD #3” 与 “ADD W” 指令的执行在Fetch-Execute周期级别，有什么不同。</li>
+</ol>
+</li>
+<li>
+<p>点击“Binary”,观察回答下面问题</p>
+<ol>
+<li>写出指令 “LOD #7” 的二进制形式，按指令结构，解释每部分的含义。</li>
+<li>解释 RAM 的地址。</li>
+<li>该机器CPU是几位的？（按累加器的位数）</li>
+<li>写出该程序对应的 C语言表达。</li>
+</ol>
+</li>
+</ol>
+<h2 id="解">解：</h2>
+<ol>
+<li>略</li>
+<li>如下
+<ol>
+<li>
+<p>PC寄存器是保存指令的地址，IR寄存器是保存根据PC地址取到的指令</p>
+</li>
+<li>
+<p>全称:Accumulator(累加器)</p>
+<p>作用:用于数据的算术运算和逻辑运算，可以存放数据或中间结果。</p>
+</li>
+<li>
+<ol>
+<li>PC 根据地址从RAM取出指令LOD #3</li>
+<li>指令传入IR，指令传入Decoder，无需取址，之后数字3传入MUX</li>
+<li>数字3传入ALU之后传入ACC</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>PC根据地址从RAM取出指令ADD W</li>
+<li>指令传入IR之后传入Decoder</li>
+<li>ALU从ACC中取值</li>
+<li>IR再次访问RAM中的W，从W中取值</li>
+<li>W的值读入ALU</li>
+<li>ALU执行加法，结果传入ACC</li>
+</ol>
+</li>
+<li>
+<p>LOD #3只需访问RAM一次,而ADD W需要两次访问RAM</p>
+</li>
+</ol>
+</li>
+<li>如下
+<ol>
+<li>00010100 00000111 前面8位是操作码,后面八位为操作数</li>
+<li>只能用于暂时存放程序和数据，一旦关闭电源或发生断电，其中的程序和数据就会丢失</li>
+<li>16</li>
+<li></li>
+</ol>
+<pre><code>int w = 3;
+int x = 7;
+int z = x + w;
+</code></pre></li>
+</ol>
+<h2 id="任务-2简单循环">任务 2：简单循环</h2>
+<ol>
+<li>输入程序Program 2，运行并回答问题：
+<ol>
+<li>用一句话总结程序的功能</li>
+<li>写出对应的 c 语言程序</li>
+</ol>
+</li>
+<li>修改该程序，用机器语言实现 10+9+8+..1 ，输出结果存放于内存 Y
+<ol>
+<li>写出 c 语言的计算过程</li>
+<li>写出机器语言的计算过程</li>
+<li>用自己的语言，简单总结高级语言与机器语言的区别与联系。</li>
+</ol>
+</li>
+</ol>
+<h2 id="解-1">解</h2>
+<ol>
+<li>如下
+<ol>
+<li>使x从10自减到-1</li>
+<li></li>
+</ol>
+<pre><code>int x = 10;
+while (x &gt;= 0){
+x--;
+}
+</code></pre></li>
+<li>如下
+<ol>
+<li>如下</li>
+</ol>
+<pre><code>int x = 10;
+int w = 0;
+while(x &gt; 0){
+w += x;
+-x;
+}
+int y = w;
+</code></pre><ol>
+<li>如下</li>
+</ol>
+<pre><code>0000000 00010100 00001010
+0000010 00000101 10000001
+0000100 00010001 00000001
+0000110 00000101 10000000
+0001000 00000000 10000001
+0001010 00000101 10000000
+0001100 00000100 10000000
+0001110 00001101 00010010
+0010000 00001100 00000100
+0010010 00000101 10000010
+0010100 00001111 00000000
+0010110 00001110 00000000
+1000000 00000000
+1000001 00000000
+1000010 00000000
+</code></pre><ol>
+<li>
+<p>联系:高级语言经编译可变为机械语言,都可以实现顺序，选择和循环结构</p>
+<p>区别：高级语言更容易理解,和人们的思维习惯更加契合; 机器语言由零一组成,不易于理解</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="实验小结">实验小结</h2>
+<ol>
+<li>了解了计算机中指令运行的过程, 知道了指令格式和指令周期</li>
+<li>了解CPU的内部结构, 易于后面计算机组成原理的学习</li>
+<li>转到了高级语言转换到机器语言的大致过程,</li>
+</ol>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://linsentaixian.github.io/LinsenTaixian/" >
+    &copy;  Linsen 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/LinsenTaixian/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

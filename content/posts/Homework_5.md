@@ -14,10 +14,10 @@ draft: false
 
 1. Boolean expression: X = AB
 2. Boolean expression: X = A＋B 
-![第一二题第二三问答案](https://github.com/LinsenTaixian/images/blob/master/homework_images/QQ%E5%9B%BE%E7%89%8720201019210114.png)
+![第一二题第二三问答案](../../static/images/homework_5/一二题2_3问.png))
 3. 
-4.  ![三四题答案](https://github.com/LinsenTaixian/images/blob/master/homework_images/QQ%E5%9B%BE%E7%89%8720201019210215.png)
-5. ![第五题答案](https://github.com/LinsenTaixian/images/blob/master/homework_images/QQ%E5%9B%BE%E7%89%8720201019210245.png)
+4.  ![三四题答案](../../static/images/homework_5/三四题.png)
+5. ![第五题答案](../../static/images/homework_5/第五题.png)
 
 # part2
 6. There are eight 1bit full adder integrated circuits. Combine them to 8bit adder circuit using the following box diagram.
@@ -28,7 +28,7 @@ draft: false
     ) = ( )2
 
 解
-6. ![第六题答案](https://github.com/LinsenTaixian/images/blob/master/homework_images/QQ%E5%9B%BE%E7%89%8720201019210254.png) 
+6. ![第六题答案](../../static/images/homework_5/第六题.png) 
 7. 
     1. (X8X7X6X5X 1111)
     1. (X8⊕0 X7⊕0 X6⊕0 X5⊕0 X4⊕1 X3⊕1 X2⊕1 X1⊕1)
