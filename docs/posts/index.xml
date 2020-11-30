@@ -5,7 +5,30 @@
     <link>https://linsentaixian.github.io/LinsenTaixian/posts/</link>
     <description>Recent content in Posts on Linsen</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 30 Oct 2020 20:25:00 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Nov 2020 14:55:19 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project_5</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_5/</link>
+      <pubDate>Sun, 15 Nov 2020 14:55:19 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_5/</guid>
+      <description>题目： 用伪代码描述算法。介绍“自顶向下，逐步求精”的编程方法，以你观察的洗衣机为案例，用伪代码描述洗衣机洗衣的程序。
+答： 自上而下方法本质上是对系统进行分解，以便以逆向工程的方式深入了解其组成子系统。 采用自上而下的方法时，会对系统的概观进行规划和具体说明，但对于第一层子系统的细节则不予阐述。接着，对每个子系统进行更详细的细化，有时甚至在许多附加的子系统层级中进行细化，直到整个规范都简化为基本元素。 自上而下模型通常会借助于“黑盒子”来详细规定，使其更易于操作。 但是，黑盒子可能会无法阐明基本机制，或可能不够详细而无法实际验证模型。 自上而下的方法始于全局，由此分解至更小的部分。
+伪代码： 洗衣过程： set the water in &amp;raquo; soap the clothes &amp;raquo; wash the clothes &amp;raquo; dewatering the clothes &amp;raquo; stop the work
+伪代码：
+注水： turn on the water_in_switch set the water volume while(water_input is less than the water volume) keep the water_in_switch open while(water_input is more than the water volume or volume timeout) stop input water
+浸泡： set the soaping time for(set the left time is zero ;the left time is less than the setting time; increase the left time) keep the clothes soaping if(the left time is equal to the setting time) begin to wash</description>
+    </item>
+    
+    <item>
+      <title>Homework_9</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_9/</link>
+      <pubDate>Sun, 15 Nov 2020 14:34:37 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_9/</guid>
+      <description>Bubble Sort the list: 33, 56, 17, 8, 95, 22。Make sure the final result is from small to large. Write out the list after the 2nd pass. (10 points) Give a sorted array as list={60,65,75,80,90,95}. Design an algorithm to insert the value of x into the sorted array. Then test the algorithm with value 50,67,99. 思考：为什么选择插入点在list头上、中间、尾巴上的三个数作为算 法测试的数据，你能解释吗？ What is the state of the stack after the following sequence of Push and Pop operations?</description>
+    </item>
+    
     <item>
       <title>project_1</title>
       <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_1/</link>
@@ -88,15 +111,6 @@ typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ if(n == 0) return 1; ll 
     </item>
     
     <item>
-      <title>Homework_5</title>
-      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/</link>
-      <pubDate>Mon, 19 Oct 2020 21:24:38 +0800</pubDate>
-      
-      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/</guid>
-      <description>part1  Give the three representations of an AND gate and say in your words what AND means. Give the three representations of an XOR gate and say in your words what XOR means. Draw a circuit diagram corresponding to the following Boolean expression: (A + B)(B + C) Show the behavior of the following circuit with a truth table: What is circuit equivalence? Use truth table to prove the following formula.</description>
-    </item>
-    
-    <item>
       <title>Homework_4</title>
       <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_4/</link>
       <pubDate>Mon, 19 Oct 2020 21:24:34 +0800</pubDate>
@@ -143,6 +157,24 @@ Algorithm In mathematics and computer science, an algorithm is a finite sequence
 Computer science Computer science is the study of algoric ithmprocesses and computational machines.
 Software Computer software, or simply software, is a collection of data or computer instructions that tell the computer how to work.
 Software engineer A software engineer is a person who applies the principles of software engineering to the design, development, maintenance, testing, and evaluation of computer software.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/</guid>
+      <description>title: &amp;ldquo;Homework_5&amp;rdquo; date: 2020-10-19T21:24:38+08:00 draft: false part1  Give the three representations of an AND gate and say in your words what AND means. Give the three representations of an XOR gate and say in your words what XOR means. Draw a circuit diagram corresponding to the following Boolean expression: (A + B)(B + C) Show the behavior of the following circuit with a truth table: What is circuit equivalence?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_6/</guid>
+      <description> title: &amp;ldquo;Project_6&amp;rdquo; date: 2020-11-30T10:44:21+08:00 draft: false 使用python求解  选择2个高等数学上的作业，如泰勒分解、公式化简、解方程等。 选择2个线性代数上的作业，如求dot、逆矩阵等，最好会解方程。  解: 高数   题目1:高数二 p52 4.2题 解答:   题目:高数二下 p156 1.1题 解答:   线代   题目1 线代 p55 16题 解答: 线代 p127 32题   题目2 解答:   </description>
     </item>
     
   </channel>
