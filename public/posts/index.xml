@@ -5,7 +5,81 @@
     <link>https://linsentaixian.github.io/LinsenTaixian/posts/</link>
     <description>Recent content in Posts on Linsen</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Oct 2020 21:24:49 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Nov 2020 14:55:19 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project_5</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_5/</link>
+      <pubDate>Sun, 15 Nov 2020 14:55:19 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_5/</guid>
+      <description>题目： 用伪代码描述算法。介绍“自顶向下，逐步求精”的编程方法，以你观察的洗衣机为案例，用伪代码描述洗衣机洗衣的程序。
+答： 自上而下方法本质上是对系统进行分解，以便以逆向工程的方式深入了解其组成子系统。 采用自上而下的方法时，会对系统的概观进行规划和具体说明，但对于第一层子系统的细节则不予阐述。接着，对每个子系统进行更详细的细化，有时甚至在许多附加的子系统层级中进行细化，直到整个规范都简化为基本元素。 自上而下模型通常会借助于“黑盒子”来详细规定，使其更易于操作。 但是，黑盒子可能会无法阐明基本机制，或可能不够详细而无法实际验证模型。 自上而下的方法始于全局，由此分解至更小的部分。
+伪代码： 洗衣过程： set the water in &amp;raquo; soap the clothes &amp;raquo; wash the clothes &amp;raquo; dewatering the clothes &amp;raquo; stop the work
+伪代码：
+注水： turn on the water_in_switch set the water volume while(water_input is less than the water volume) keep the water_in_switch open while(water_input is more than the water volume or volume timeout) stop input water
+浸泡： set the soaping time for(set the left time is zero ;the left time is less than the setting time; increase the left time) keep the clothes soaping if(the left time is equal to the setting time) begin to wash</description>
+    </item>
+    
+    <item>
+      <title>Homework_9</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_9/</link>
+      <pubDate>Sun, 15 Nov 2020 14:34:37 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_9/</guid>
+      <description>Bubble Sort the list: 33, 56, 17, 8, 95, 22。Make sure the final result is from small to large. Write out the list after the 2nd pass. (10 points) Give a sorted array as list={60,65,75,80,90,95}. Design an algorithm to insert the value of x into the sorted array. Then test the algorithm with value 50,67,99. 思考：为什么选择插入点在list头上、中间、尾巴上的三个数作为算 法测试的数据，你能解释吗？ What is the state of the stack after the following sequence of Push and Pop operations?</description>
+    </item>
+    
+    <item>
+      <title>project_1</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_1/</link>
+      <pubDate>Fri, 30 Oct 2020 20:25:00 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_1/</guid>
+      <description>快速幂运算和矩阵快速幂运算 快速幂运算 题:既求一个数的n次方,其中n特别大, 最后的结果对k取余
+例如$ a^{22}$ 其中$ 22$的二进制表示为$ 10110$, 所以可以通过一直计算$ x$的平方, 然后在n的二进制为一的地方乘以res, 就可以得到下面的额算法
+typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ ll res = 1; while(n &amp;gt; 0){ if(n&amp;amp;1) res = x*x%mod_k; x = x*x%mod_k; n&amp;gt;&amp;gt;= 1; } return res; } 或者:
+或者也可以采用另外一种理解使用递归函数$n$ 为偶数时, 其递归是$a^n = (a^2)^{\frac{n}{2}}$ , 如果是奇数, 也可以递归成 $ a^n = {(a^2)}^{\frac{n- 1}{2}}\times a$ , 就是下面的代码所示
+typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ if(n == 0) return 1; ll res = mod_pow(x*x%mod_k, n/2, mod_k); if(n&amp;amp;1) res = res*x%mod_k; return res; } 矩阵的快速幂运算 两个矩阵的快速运算为</description>
+    </item>
+    
+    <item>
+      <title>project_2</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_2/</link>
+      <pubDate>Fri, 30 Oct 2020 20:25:00 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_2/</guid>
+      <description>以Construct 3制作平台游戏的新手指南   首先你需要打开这个网站，然后注册登录。之后便可以进行游戏的制作啦
+  游戏制作第一步,先创建新项目.  游戏制作的第二步,你需要给你的游戏选一张背景图.   选择好背景之后就可以选择游戏的人物了   人物已经创建好了,接下来就是加一些事件了   好了,游戏已经创建好了,现在保存预览就可以了,记得保存到本地或者云中.
+  这是我的游戏链接</description>
+    </item>
+    
+    <item>
+      <title>Project_3</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_3/</link>
+      <pubDate>Thu, 29 Oct 2020 20:25:00 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_3/</guid>
+      <description>任务 1：建立一个简单电路   设计与门验证电路
+  画真值表验证与门功能
+   InA INB Out     0 0 0   0 1 ？   1 0 ？   1 1 ？      选做题：
+ 如何用 XOR 门作非门。 串联、并联三极管，结果是什么门？    解:   如表    InA INB Out     0 0 0   0 1 0   1 0 0   1 1 1     如下  将 XOR 门的一个引脚接高电平,另一个作为输入, 这时就是一个非门 串联是与门，并联是或门    任务 2：验证电路等价   分别建立电路 A（B+C）和 AB+AC 在一个界面上。用 A，B，C 用三个开关控制输入，用两个 LED 表示输出。</description>
+    </item>
+    
+    <item>
+      <title>Project_4</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_4/</link>
+      <pubDate>Thu, 29 Oct 2020 18:43:16 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_4/</guid>
+      <description>任务 1：简单程序   打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number
+  点step after step。观察并回答下面问题：
+ PC，IR 寄存器的作用。 ACC 寄存器的全称与作用。 用“LOD #3”指令的执行过程，解释Fetch-Execute周期。 用“ADD W” 指令的执行过程，解释Fetch-Execute周期。 “LOD #3” 与 “ADD W” 指令的执行在Fetch-Execute周期级别，有什么不同。    点击“Binary”,观察回答下面问题
+ 写出指令 “LOD #7” 的二进制形式，按指令结构，解释每部分的含义。 解释 RAM 的地址。 该机器CPU是几位的？（按累加器的位数） 写出该程序对应的 C语言表达。    解：  略 如下   PC寄存器是保存指令的地址，IR寄存器是保存根据PC地址取到的指令
+  全称:Accumulator(累加器)
+作用:用于数据的算术运算和逻辑运算，可以存放数据或中间结果。
+   PC 根据地址从RAM取出指令LOD #3 指令传入IR，指令传入Decoder，无需取址，之后数字3传入MUX 数字3传入ALU之后传入ACC     PC根据地址从RAM取出指令ADD W 指令传入IR之后传入Decoder ALU从ACC中取值 IR再次访问RAM中的W，从W中取值 W的值读入ALU ALU执行加法，结果传入ACC    LOD #3只需访问RAM一次,而ADD W需要两次访问RAM</description>
+    </item>
+    
     <item>
       <title>Homework_8</title>
       <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_8/</link>
@@ -34,15 +108,6 @@
       
       <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_6/</guid>
       <description>Homework:  According to the von Neumann architecture, List basic parts of a computer. A computer has 64 MB (megabytes) of memory. How many bits are needed to address any single byte in memory? List basic parts of a CPU, include cache or not? What mean secondary storage. List some on your PC. 使用维基百科，解释以下概念：CPU、RAM、ROM、Bus (computing)、Parallel Computing 写一段文字，简单解释“云计算（cloud computing）” 小孙买了计算机主板，说明书表明“支持双通道DDR3-1333内存, 最大支持16G”  DDR3内存，“3”和“1333”的含义是什么？ 小孙买8G DDR3-1600的内存能提高性能吗？ 小孙买4G*2 DDR3-1333的内存能提高性能吗？ 16G需要多少位地址？    解:</description>
-    </item>
-    
-    <item>
-      <title>Homework_5</title>
-      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/</link>
-      <pubDate>Mon, 19 Oct 2020 21:24:38 +0800</pubDate>
-      
-      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/</guid>
-      <description>part1  Give the three representations of an AND gate and say in your words what AND means. Give the three representations of an XOR gate and say in your words what XOR means. Draw a circuit diagram corresponding to the following Boolean expression: (A + B)(B + C) Show the behavior of the following circuit with a truth table: What is circuit equivalence? Use truth table to prove the following formula.</description>
     </item>
     
     <item>
@@ -95,16 +160,21 @@ Software engineer A software engineer is a person who applies the principles of 
     </item>
     
     <item>
-      <title>快速幂运算和矩阵快速幂运算</title>
-      <link>https://linsentaixian.github.io/LinsenTaixian/posts/%E5%BF%AB%E9%80%9F%E5%B9%82%E8%BF%90%E7%AE%97%E5%92%8C%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82%E8%BF%90%E7%AE%97/</link>
-      <pubDate>Sun, 27 Sep 2020 01:29:21 +0800</pubDate>
+      <title></title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/%E5%BF%AB%E9%80%9F%E5%B9%82%E8%BF%90%E7%AE%97%E5%92%8C%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82%E8%BF%90%E7%AE%97/</guid>
-      <description>快速幂运算和矩阵快速幂运算 快速幂运算 题:既求一个数的n次方,其中n特别大, 最后的结果对k取余
-例如$ a^{22}$ 其中$ 22$的二进制表示为$ 10110$, 所以可以通过一直计算$ x$的平方, 然后在n的二进制为一的地方乘以res, 就可以得到下面的额算法
-typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ ll res = 1; while(n &amp;gt; 0){ if(n&amp;amp;1) res = x*x%mod_k; x = x*x%mod_k; n&amp;gt;&amp;gt;= 1; } return res; } 或者:
-或者也可以采用另外一种理解使用递归函数$n$ 为偶数时, 其递归是$a^n = (a^2)^{\frac{n}{2}}$ , 如果是奇数, 也可以递归成 $ a^n = {(a^2)}^{\frac{n- 1}{2}}\times a$ , 就是下面的代码所示
-typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ if(n == 0) return 1; ll res = mod_pow(x*x%mod_k, n/2, mod_k); if(n&amp;amp;1) res = res*x%mod_k; return res; } 矩阵的快速幂运算 两个矩阵的快速运算为</description>
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/</guid>
+      <description>title: &amp;ldquo;Homework_5&amp;rdquo; date: 2020-10-19T21:24:38+08:00 draft: false part1  Give the three representations of an AND gate and say in your words what AND means. Give the three representations of an XOR gate and say in your words what XOR means. Draw a circuit diagram corresponding to the following Boolean expression: (A + B)(B + C) Show the behavior of the following circuit with a truth table: What is circuit equivalence?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_6/</guid>
+      <description> title: &amp;ldquo;Project_6&amp;rdquo; date: 2020-11-30T10:44:21+08:00 draft: false 使用python求解  选择2个高等数学上的作业，如泰勒分解、公式化简、解方程等。 选择2个线性代数上的作业，如求dot、逆矩阵等，最好会解方程。  解: 高数   题目1:高数二 p52 4.2题 解答:   题目:高数二下 p156 1.1题 解答:   线代   题目1 线代 p55 16题 解答: 线代 p127 32题   题目2 解答:   </description>
     </item>
     
   </channel>
