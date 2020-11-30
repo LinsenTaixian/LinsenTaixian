@@ -1,12 +1,3 @@
-<!--
- * @Descripttion: 
- * @version: 1.0
- * @Author: linsen
- * @Date: 2020-11-30 10:44:21
- * @LastEditors: linsen
- * @LastEditTime: 2020-11-30 16:57:49
- * @solve: false
--->
 ---
 title: "Project_6"
 date: 2020-11-30T10:44:21+08:00

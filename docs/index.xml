@@ -5,7 +5,16 @@
     <link>https://linsentaixian.github.io/LinsenTaixian/</link>
     <description>Recent content on Linsen</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 15 Nov 2020 14:55:19 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Nov 2020 10:44:21 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project_6</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_6/</link>
+      <pubDate>Mon, 30 Nov 2020 10:44:21 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_6/</guid>
+      <description>使用python求解  选择2个高等数学上的作业，如泰勒分解、公式化简、解方程等。 选择2个线性代数上的作业，如求dot、逆矩阵等，最好会解方程。  解: 高数   题目1:高数二 p52 4.2题 解答:   题目:高数二下 p156 1.1题 解答:   线代   题目1 线代 p55 16题 解答: 线代 p127 32题   题目2 解答:   </description>
+    </item>
+    
     <item>
       <title>Project_5</title>
       <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_5/</link>
@@ -166,15 +175,6 @@ Software engineer A software engineer is a person who applies the principles of 
       
       <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/</guid>
       <description>title: &amp;ldquo;Homework_5&amp;rdquo; date: 2020-10-19T21:24:38+08:00 draft: false part1  Give the three representations of an AND gate and say in your words what AND means. Give the three representations of an XOR gate and say in your words what XOR means. Draw a circuit diagram corresponding to the following Boolean expression: (A + B)(B + C) Show the behavior of the following circuit with a truth table: What is circuit equivalence?</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_6/</guid>
-      <description> title: &amp;ldquo;Project_6&amp;rdquo; date: 2020-11-30T10:44:21+08:00 draft: false 使用python求解  选择2个高等数学上的作业，如泰勒分解、公式化简、解方程等。 选择2个线性代数上的作业，如求dot、逆矩阵等，最好会解方程。  解: 高数   题目1:高数二 p52 4.2题 解答:   题目:高数二下 p156 1.1题 解答:   线代   题目1 线代 p55 16题 解答: 线代 p127 32题   题目2 解答:   </description>
     </item>
     
   </channel>
