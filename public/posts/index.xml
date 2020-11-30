@@ -177,5 +177,14 @@ Software engineer A software engineer is a person who applies the principles of 
       <description>title: &amp;ldquo;Homework_5&amp;rdquo; date: 2020-10-19T21:24:38+08:00 draft: false part1  Give the three representations of an AND gate and say in your words what AND means. Give the three representations of an XOR gate and say in your words what XOR means. Draw a circuit diagram corresponding to the following Boolean expression: (A + B)(B + C) Show the behavior of the following circuit with a truth table: What is circuit equivalence?</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/try/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/try/</guid>
+      <description>title: &amp;ldquo;Try&amp;rdquo; date: 2020-10-30T20:37:03+08:00 draft: true new文件而且写好文件之后执行的命令 hugo &amp;ndash; 编译静态文件</description>
+    </item>
+    
   </channel>
 </rss>
