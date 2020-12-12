@@ -5,7 +5,30 @@
     <link>https://linsentaixian.github.io/LinsenTaixian/</link>
     <description>Recent content on Linsen</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 30 Nov 2020 10:44:21 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Dec 2020 10:47:53 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project_7</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_7/</link>
+      <pubDate>Sat, 12 Dec 2020 10:47:53 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_7/</guid>
+      <description>脑机连接带来的伦理道德问题 在电影黑客帝国中人们通过脑后的接口与计算机相连，活在电脑虚拟出来的世界中，过着《楚门世界》的生活。 如今这一技术虽然缓慢但是仍然在一步一步的向我们走来，美国福克斯新闻网就曾在报道中指出，一项新研究表明，脑机接口面世的时间可能大大早于很多人的预期，或许几十年内就能实现。
+我们必须对此保持着谨慎的态度,因为脑机接口技术会带来很多的伦理道德问题
+  第一个隐私问题
+使用脑机接口将人脑与机器相连接意味着人的思想将变得毫无隐私可言，因为你的每一个思想都是大脑中的电信号的传递而产生的，而这些电信号也将通过脑机接口传输到机器，你的大脑将变得毫无密码可言，一切都将在机器中一览无遗。
+  脑机责任
+脑机连接技术将大脑信号直接转化成机器行动，正常大脑会克制和犹豫，而芯片却不会。 脑机芯片并不会关心一个机器动作的后果，不会犹豫和克制的芯片将会指令机器做出许多正常人只是一闪而过的念头，造成冲突和犯罪。 将来到了法庭上，法官该如何判决呢？是发出指令的人，还是芯片制造商和机器承担罪责？
+  现实中的“少数派报告”
+人的脑信号变得可视化之后，那么政府机构将会通过扫描社会中人们的大脑信息来查找罪犯或者寻找潜在的罪犯，将他们囚禁起来，这个技术对预防犯罪有着极大的帮助，但是在没有犯罪的前提下将人逮捕是不合法的，但是不这样做又会造成社会危害，这就是现实世界中的“少数派报告”
+  是人还是机器
+脑机接口进一步发展，人类的身体将可以丢弃，可以借由机器来生存，但是这样一来我们是人还是机器，血肉之躯我们人类使用了几千万年， 如今丢弃了，那么我们还是人类吗？还是只是一个智能的机器
+  自然属性的消亡
+人类可以依靠机器获得永生, 也可以通过机器来孕育后代. 那么人类最后的婚姻和家庭的自然属性将消失, 这是福还是祸?
+  自由意志是否存在
+人类的大脑连接机器之后，那么也需要机器来提高大脑信息，那么这个时候是人在控制着机器，还是机器在控制着大脑。如果是后者，那还有自由意志吗？所谓的人脑意识不过是一段电信号而已。
+  如果继续深入思考的话，脑机连接技术最终还会碰上一个哲学难题，那就是“忒修斯之船”。 公元1世纪的时候普鲁塔克提出一个问题：如果忒修斯船上的木头被逐渐替换，直到所有的木头都不是原来的木头，那么是这艘船是原来的那艘船呢，还是换下来的木头组成的船是原来的那艘船？ 同理，如果有一天，我们的身体部分逐浙被机器部件所替代，那用我的身体部分组成的这个人是我，还是现在的机器组成的这个人是我？</description>
+    </item>
+    
     <item>
       <title>Project_6</title>
       <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_6/</link>
@@ -120,6 +143,15 @@ typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ if(n == 0) return 1; ll 
     </item>
     
     <item>
+      <title>Homework_5</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/</link>
+      <pubDate>Mon, 19 Oct 2020 21:24:38 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/</guid>
+      <description>part1  Give the three representations of an AND gate and say in your words what AND means. Give the three representations of an XOR gate and say in your words what XOR means. Draw a circuit diagram corresponding to the following Boolean expression: (A + B)(B + C) Show the behavior of the following circuit with a truth table: What is circuit equivalence? Use truth table to prove the following formula.</description>
+    </item>
+    
+    <item>
       <title>Homework_4</title>
       <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_4/</link>
       <pubDate>Mon, 19 Oct 2020 21:24:34 +0800</pubDate>
@@ -166,24 +198,6 @@ Algorithm In mathematics and computer science, an algorithm is a finite sequence
 Computer science Computer science is the study of algoric ithmprocesses and computational machines.
 Software Computer software, or simply software, is a collection of data or computer instructions that tell the computer how to work.
 Software engineer A software engineer is a person who applies the principles of software engineering to the design, development, maintenance, testing, and evaluation of computer software.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/homework_5/</guid>
-      <description>title: &amp;ldquo;Homework_5&amp;rdquo; date: 2020-10-19T21:24:38+08:00 draft: false part1  Give the three representations of an AND gate and say in your words what AND means. Give the three representations of an XOR gate and say in your words what XOR means. Draw a circuit diagram corresponding to the following Boolean expression: (A + B)(B + C) Show the behavior of the following circuit with a truth table: What is circuit equivalence?</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://linsentaixian.github.io/LinsenTaixian/posts/try/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/try/</guid>
-      <description>title: &amp;ldquo;Try&amp;rdquo; date: 2020-10-30T20:37:03+08:00 draft: true new文件而且写好文件之后执行的命令 hugo &amp;ndash; 编译静态文件 hugo -d docs &amp;ndash; 加载到docs,如此才能被GitHub引用</description>
     </item>
     
   </channel>

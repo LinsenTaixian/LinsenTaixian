@@ -1,7 +1,7 @@
 ---
 title: "Project_7"
 date: 2020-12-12T10:47:53+08:00
-draft: true
+draft: false
 ---
 
 ### 脑机连接带来的伦理道德问题

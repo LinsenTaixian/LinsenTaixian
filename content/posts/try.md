@@ -1,12 +1,3 @@
-<!--
- * @Descripttion: 
- * @version: 1.0
- * @Author: linsen
- * @Date: 2020-10-30 20:37:03
- * @LastEditors: linsen
- * @LastEditTime: 2020-11-30 18:43:37
- * @solve: false
--->
 ---
 title: "Try"
 date: 2020-10-30T20:37:03+08:00
