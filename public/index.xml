@@ -5,7 +5,18 @@
     <link>https://linsentaixian.github.io/LinsenTaixian/</link>
     <description>Recent content on Linsen</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 12 Dec 2020 10:47:53 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Jan 2021 23:33:38 +0800</lastBuildDate><atom:link href="https://linsentaixian.github.io/LinsenTaixian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project_8</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_8/</link>
+      <pubDate>Mon, 04 Jan 2021 23:33:38 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_8/</guid>
+      <description>我写了四个文件: snake.h文件, sanke_eat.c文件,sanke_move.c文件和一个readme.md文件
+snake.h文件内容如下:
+#ifndef _SNAKE_H_ #define _SNAKE_H_ // 定义地图中的各种符号 #define SNAKE_HEAD &#39;H&#39; #define SNAKE_BODY &#39;X&#39; #define BLANK &#39; &#39; #define WALL &#39;*&#39; #define FOOD &#39;$&#39; // 定义🐍的状态 int LIFE = 1; // 🐍的身体和头的坐标 int snake_i[100] = {1, 1, 1, 1, 1}; int snake_j[100] = {1, 2, 3, 4, 5}; int snake_size = 5; // 分别表示上下左右的运动方向 int dir_i[4] = {-1, 1, 0, 0}; int dir_j[4] = {0, 0, -1, 1}; // 初始地图 char map[12][12] = { &amp;quot;***********&amp;quot;, &amp;quot;*XXXXH *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;***********&amp;quot;, }; // 运动函数 void move(char a); // 打印函数 void print(); // 产生食物void void creat_food(); #endif snake_eat.</description>
+    </item>
+    
     <item>
       <title>Project_7</title>
       <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_7/</link>
