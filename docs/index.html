@@ -158,6 +158,32 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_9/" class="color-inherit dim link">
+            Project_9
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          贪吃蛇之智能蛇 感觉这个还不算很难, 主要就是在前面的贪吃蛇的基础上改变几个内容, 比如每次输出贪吃蛇的整个画面之前进行一次屏幕的清空, 这个我在网上查了一下如果是使用Windows, 在windows加上Windows.h的头文件之后使用clear函数也可以实现, 另外就是为了使得蛇不要移动的太快,使用了sleep函数. 这个函数windows的头文件中也有. 然后就是自己写一个控制蛇移动方向的函数. 有点写作弊软件的感觉了.
+下面是代码:
+#include &lt;Windows.h&gt; #include &lt;math.h&gt; #include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #include &lt;time.h&gt; #define SNAKE_MAX_LENGTH 50 #define SNAKE_HEAD 'H' #define SNAKE_BODY 'X' #define BLANK_CELL ' ' #define SNAKE_FOOD '$' #define WALL_CELL '*' char map[12][13] = {&quot;************&quot;, &quot;*XXXXH *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;************&quot;}; //全局变量：初始状态表 char movable[4] = {'a', 'd', 'w', 's'}; int distance[4] = {0}; int food = 0; //定义开始时食物数量为0 int x = 0, y = 0; //定义食物的坐标（x，y） int snakex[SNAKE_MAX_LENGTH] = {5, 4, 3, 2, 1}; //蛇身的横坐标 int snakey[SNAKE_MAX_LENGTH] = {1, 1, 1, 1, 1}; //蛇身的纵坐标 int lastX = 1, lastY = 1; //表示蛇尾部的坐标 int length = 5; //定义初始长度，在该变量完成蛇长的变化 char wheregonext(int x, int y, int z, int m); void move(int x, int y); //蛇移动函数 void output(void); //蛇移动效果打印函数 void clear(void); //蛇移动前的蛇图像清空 void printmap(void); //打印 int gameover(void); //判定游戏结束（碰到身子或边界） void snakefood(void); //用来生成食物 void eatfood(void); //蛇吃食物后身体增长 int main() { int i; snakefood(); printmap(); //打印初始状态图 char c; int a = 0, b = 0; while (1) { snakefood(); c = wheregonext(snakex[0], snakey[0], x, y); Sleep(30); switch (c) { //进行移动 case 'a': //左移时 a = 1; b = 0; snakefood(); move(a, b); if (gameover()) //判定游戏是否结束 { printf(&quot;\nGAME OVER!
+        </div>
+          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_9/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_8/" class="color-inherit dim link">
             Project_8
             </a>
@@ -176,50 +202,18 @@ snake.h文件内容如下:
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_7/" class="color-inherit dim link">
-            Project_7
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          脑机连接带来的伦理道德问题 在电影黑客帝国中人们通过脑后的接口与计算机相连，活在电脑虚拟出来的世界中，过着《楚门世界》的生活。 如今这一技术虽然缓慢但是仍然在一步一步的向我们走来，美国福克斯新闻网就曾在报道中指出，一项新研究表明，脑机接口面世的时间可能大大早于很多人的预期，或许几十年内就能实现。
-我们必须对此保持着谨慎的态度,因为脑机接口技术会带来很多的伦理道德问题
-  第一个隐私问题
-使用脑机接口将人脑与机器相连接意味着人的思想将变得毫无隐私可言，因为你的每一个思想都是大脑中的电信号的传递而产生的，而这些电信号也将通过脑机接口传输到机器，你的大脑将变得毫无密码可言，一切都将在机器中一览无遗。
-  脑机责任
-脑机连接技术将大脑信号直接转化成机器行动，正常大脑会克制和犹豫，而芯片却不会。 脑机芯片并不会关心一个机器动作的后果，不会犹豫和克制的芯片将会指令机器做出许多正常人只是一闪而过的念头，造成冲突和犯罪。 将来到了法庭上，法官该如何判决呢？是发出指令的人，还是芯片制造商和机器承担罪责？
-  现实中的“少数派报告”
-人的脑信号变得可视化之后，那么政府机构将会通过扫描社会中人们的大脑信息来查找罪犯或者寻找潜在的罪犯，将他们囚禁起来，这个技术对预防犯罪有着极大的帮助，但是在没有犯罪的前提下将人逮捕是不合法的，但是不这样做又会造成社会危害，这就是现实世界中的“少数派报告”
-  是人还是机器
-脑机接口进一步发展，人类的身体将可以丢弃，可以借由机器来生存，但是这样一来我们是人还是机器，血肉之躯我们人类使用了几千万年， 如今丢弃了，那么我们还是人类吗？还是只是一个智能的机器
-  自然属性的消亡
-人类可以依靠机器获得永生, 也可以通过机器来孕育后代. 那么人类最后的婚姻和家庭的自然属性将消失, 这是福还是祸?
-  自由意志是否存在
-人类的大脑连接机器之后，那么也需要机器来提高大脑信息，那么这个时候是人在控制着机器，还是机器在控制着大脑。如果是后者，那还有自由意志吗？所谓的人脑意识不过是一段电信号而已。
-  如果继续深入思考的话，脑机连接技术最终还会碰上一个哲学难题，那就是“忒修斯之船”。 公元1世纪的时候普鲁塔克提出一个问题：如果忒修斯船上的木头被逐渐替换，直到所有的木头都不是原来的木头，那么是这艘船是原来的那艘船呢，还是换下来的木头组成的船是原来的那艘船？ 同理，如果有一天，我们的身体部分逐浙被机器部件所替代，那用我的身体部分组成的这个人是我，还是现在的机器组成的这个人是我？
-        </div>
-          <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_7/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_7/" class="link black dim">
+              Project_7
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_6/" class="link black dim">
@@ -236,12 +230,6 @@ snake.h文件内容如下:
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://linsentaixian.github.io/LinsenTaixian/posts/homework_9/" class="link black dim">
               Homework_9
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_1/" class="link black dim">
-              project_1
             </a>
           </h2>
         

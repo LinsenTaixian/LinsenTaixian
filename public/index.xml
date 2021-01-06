@@ -22,6 +22,17 @@
     </item>
     
     <item>
+      <title>Project_9</title>
+      <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_9/</link>
+      <pubDate>Mon, 04 Jan 2021 23:33:44 +0800</pubDate>
+      
+      <guid>https://linsentaixian.github.io/LinsenTaixian/posts/project_9/</guid>
+      <description>贪吃蛇之智能蛇 感觉这个还不算很难, 主要就是在前面的贪吃蛇的基础上改变几个内容, 比如每次输出贪吃蛇的整个画面之前进行一次屏幕的清空, 这个我在网上查了一下如果是使用Windows, 在windows加上Windows.h的头文件之后使用clear函数也可以实现, 另外就是为了使得蛇不要移动的太快,使用了sleep函数. 这个函数windows的头文件中也有. 然后就是自己写一个控制蛇移动方向的函数. 有点写作弊软件的感觉了.
+下面是代码:
+#include &amp;lt;Windows.h&amp;gt; #include &amp;lt;math.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;time.h&amp;gt; #define SNAKE_MAX_LENGTH 50 #define SNAKE_HEAD &#39;H&#39; #define SNAKE_BODY &#39;X&#39; #define BLANK_CELL &#39; &#39; #define SNAKE_FOOD &#39;$&#39; #define WALL_CELL &#39;*&#39; char map[12][13] = {&amp;quot;************&amp;quot;, &amp;quot;*XXXXH *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;* *&amp;quot;, &amp;quot;************&amp;quot;}; //全局变量：初始状态表 char movable[4] = {&#39;a&#39;, &#39;d&#39;, &#39;w&#39;, &#39;s&#39;}; int distance[4] = {0}; int food = 0; //定义开始时食物数量为0 int x = 0, y = 0; //定义食物的坐标（x，y） int snakex[SNAKE_MAX_LENGTH] = {5, 4, 3, 2, 1}; //蛇身的横坐标 int snakey[SNAKE_MAX_LENGTH] = {1, 1, 1, 1, 1}; //蛇身的纵坐标 int lastX = 1, lastY = 1; //表示蛇尾部的坐标 int length = 5; //定义初始长度，在该变量完成蛇长的变化 char wheregonext(int x, int y, int z, int m); void move(int x, int y); //蛇移动函数 void output(void); //蛇移动效果打印函数 void clear(void); //蛇移动前的蛇图像清空 void printmap(void); //打印 int gameover(void); //判定游戏结束（碰到身子或边界） void snakefood(void); //用来生成食物 void eatfood(void); //蛇吃食物后身体增长 int main() { int i; snakefood(); printmap(); //打印初始状态图 char c; int a = 0, b = 0; while (1) { snakefood(); c = wheregonext(snakex[0], snakey[0], x, y); Sleep(30); switch (c) { //进行移动 case &#39;a&#39;: //左移时 a = 1; b = 0; snakefood(); move(a, b); if (gameover()) //判定游戏是否结束 { printf(&amp;quot;\nGAME OVER!</description>
+    </item>
+    
+    <item>
       <title>Project_8</title>
       <link>https://linsentaixian.github.io/LinsenTaixian/posts/project_8/</link>
       <pubDate>Mon, 04 Jan 2021 23:33:38 +0800</pubDate>

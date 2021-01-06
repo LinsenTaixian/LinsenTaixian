@@ -123,6 +123,23 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_9/" class="link black dim">
+        Project_9
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      贪吃蛇之智能蛇 感觉这个还不算很难, 主要就是在前面的贪吃蛇的基础上改变几个内容, 比如每次输出贪吃蛇的整个画面之前进行一次屏幕的清空, 这个我在网上查了一下如果是使用Windows, 在windows加上Windows.h的头文件之后使用clear函数也可以实现, 另外就是为了使得蛇不要移动的太快,使用了sleep函数. 这个函数windows的头文件中也有. 然后就是自己写一个控制蛇移动方向的函数. 有点写作弊软件的感觉了.
+下面是代码:
+#include &lt;Windows.h&gt; #include &lt;math.h&gt; #include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #include &lt;time.h&gt; #define SNAKE_MAX_LENGTH 50 #define SNAKE_HEAD 'H' #define SNAKE_BODY 'X' #define BLANK_CELL ' ' #define SNAKE_FOOD '$' #define WALL_CELL '*' char map[12][13] = {&quot;************&quot;, &quot;*XXXXH *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;* *&quot;, &quot;************&quot;}; //全局变量：初始状态表 char movable[4] = {'a', 'd', 'w', 's'}; int distance[4] = {0}; int food = 0; //定义开始时食物数量为0 int x = 0, y = 0; //定义食物的坐标（x，y） int snakex[SNAKE_MAX_LENGTH] = {5, 4, 3, 2, 1}; //蛇身的横坐标 int snakey[SNAKE_MAX_LENGTH] = {1, 1, 1, 1, 1}; //蛇身的纵坐标 int lastX = 1, lastY = 1; //表示蛇尾部的坐标 int length = 5; //定义初始长度，在该变量完成蛇长的变化 char wheregonext(int x, int y, int z, int m); void move(int x, int y); //蛇移动函数 void output(void); //蛇移动效果打印函数 void clear(void); //蛇移动前的蛇图像清空 void printmap(void); //打印 int gameover(void); //判定游戏结束（碰到身子或边界） void snakefood(void); //用来生成食物 void eatfood(void); //蛇吃食物后身体增长 int main() { int i; snakefood(); printmap(); //打印初始状态图 char c; int a = 0, b = 0; while (1) { snakefood(); c = wheregonext(snakex[0], snakey[0], x, y); Sleep(30); switch (c) { //进行移动 case 'a': //左移时 a = 1; b = 0; snakefood(); move(a, b); if (gameover()) //判定游戏是否结束 { printf(&quot;\nGAME OVER!
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_8/" class="link black dim">
         Project_8
       </a>
@@ -264,27 +281,6 @@ typedef long long ll; ll mod_pow(ll x, ll n, ll mod_k){ if(n == 0) return 1; ll 
   画真值表验证与门功能
    InA INB Out     0 0 0   0 1 ？   1 0 ？   1 1 ？      选做题：
  如何用 XOR 门作非门。 串联、并联三极管，结果是什么门？    解:   如表    InA INB Out     0 0 0   0 1 0   1 0 0   1 1 1     如下  将 XOR 门的一个引脚接高电平,另一个作为输入, 这时就是一个非门 串联是与门，并联是或门    任务 2：验证电路等价   分别建立电路 A（B+C）和 AB+AC 在一个界面上。用 A，B，C 用三个开关控制输入，用两个 LED 表示输出。
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="https://linsentaixian.github.io/LinsenTaixian/posts/project_4/" class="link black dim">
-        Project_4
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      任务 1：简单程序   打开网页 [The PIPPIN User’s Guide](slides/The PIPPIN User’s Guide.html) ，然后输入 Program 1：Add 2 number
-  点step after step。观察并回答下面问题：
- PC，IR 寄存器的作用。 ACC 寄存器的全称与作用。 用“LOD #3”指令的执行过程，解释Fetch-Execute周期。 用“ADD W” 指令的执行过程，解释Fetch-Execute周期。 “LOD #3” 与 “ADD W” 指令的执行在Fetch-Execute周期级别，有什么不同。    点击“Binary”,观察回答下面问题
- 写出指令 “LOD #7” 的二进制形式，按指令结构，解释每部分的含义。 解释 RAM 的地址。 该机器CPU是几位的？（按累加器的位数） 写出该程序对应的 C语言表达。    解：  略 如下   PC寄存器是保存指令的地址，IR寄存器是保存根据PC地址取到的指令
-  全称:Accumulator(累加器)
-作用:用于数据的算术运算和逻辑运算，可以存放数据或中间结果。
-   PC 根据地址从RAM取出指令LOD #3 指令传入IR，指令传入Decoder，无需取址，之后数字3传入MUX 数字3传入ALU之后传入ACC     PC根据地址从RAM取出指令ADD W 指令传入IR之后传入Decoder ALU从ACC中取值 IR再次访问RAM中的W，从W中取值 W的值读入ALU ALU执行加法，结果传入ACC    LOD #3只需访问RAM一次,而ADD W需要两次访问RAM
     </div>
   </div>
 </div>
